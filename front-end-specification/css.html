@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS 编码规范 | 前端规范</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/front-end-specification/assets/css/0.styles.8065cc31.css" as="style"><link rel="preload" href="/front-end-specification/assets/js/app.dfc6ef1a.js" as="script"><link rel="preload" href="/front-end-specification/assets/js/2.3ba16526.js" as="script"><link rel="preload" href="/front-end-specification/assets/js/8.43deaf91.js" as="script"><link rel="prefetch" href="/front-end-specification/assets/js/10.5e9246f0.js"><link rel="prefetch" href="/front-end-specification/assets/js/11.465efff8.js"><link rel="prefetch" href="/front-end-specification/assets/js/12.161feba4.js"><link rel="prefetch" href="/front-end-specification/assets/js/13.42a5212c.js"><link rel="prefetch" href="/front-end-specification/assets/js/14.34c54d19.js"><link rel="prefetch" href="/front-end-specification/assets/js/3.58307ead.js"><link rel="prefetch" href="/front-end-specification/assets/js/4.c1ae2fe6.js"><link rel="prefetch" href="/front-end-specification/assets/js/5.a5a9a5a3.js"><link rel="prefetch" href="/front-end-specification/assets/js/6.c8b7a84a.js"><link rel="prefetch" href="/front-end-specification/assets/js/7.3e3e9db9.js"><link rel="prefetch" href="/front-end-specification/assets/js/9.6d2db724.js">
+    <link rel="stylesheet" href="/front-end-specification/assets/css/0.styles.8065cc31.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-specification/" class="home-link router-link-active"><!----> <span class="site-name">前端规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端规范" class="dropdown-title"><span class="title">前端规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端规范" class="mobile-dropdown-title"><span class="title">前端规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-specification/js.html" class="nav-link">
+  JavaScript 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/css.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CSS 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/html.html" class="nav-link">
+  HTML 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/vue.html" class="nav-link">
+  Vue 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/git.html" class="nav-link">
+  Git 规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/file.html" class="nav-link">
+  文件命名规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/verify.html" class="nav-link">
+  规范验证与代码格式化
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端规范" class="dropdown-title"><span class="title">前端规范</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端规范" class="mobile-dropdown-title"><span class="title">前端规范</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-specification/js.html" class="nav-link">
+  JavaScript 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/css.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CSS 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/html.html" class="nav-link">
+  HTML 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/vue.html" class="nav-link">
+  Vue 编码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/git.html" class="nav-link">
+  Git 规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/file.html" class="nav-link">
+  文件命名规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-specification/verify.html" class="nav-link">
+  规范验证与代码格式化
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/front-end-specification/" aria-current="page" class="sidebar-link">简介</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-end-specification/js.html" class="sidebar-link">JavaScript 编码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#类型" class="sidebar-link">类型</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#赋值" class="sidebar-link">赋值</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#对象" class="sidebar-link">对象</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#数组" class="sidebar-link">数组</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#解构赋值" class="sidebar-link">解构赋值</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#字符串" class="sidebar-link">字符串</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#函数" class="sidebar-link">函数</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#箭头函数" class="sidebar-link">箭头函数</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#类和构造函数" class="sidebar-link">类和构造函数</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#模块" class="sidebar-link">模块</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#迭代器和生成器" class="sidebar-link">迭代器和生成器</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#变量" class="sidebar-link">变量</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#提升" class="sidebar-link">提升</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#比较运算符" class="sidebar-link">比较运算符</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#语句块" class="sidebar-link">语句块</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#控制语句" class="sidebar-link">控制语句</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#注释" class="sidebar-link">注释</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#空格" class="sidebar-link">空格</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#逗号" class="sidebar-link">逗号</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#分号" class="sidebar-link">分号</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#类型转换" class="sidebar-link">类型转换</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#命名规则" class="sidebar-link">命名规则</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#访问器" class="sidebar-link">访问器</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/js.html#测试" class="sidebar-link">测试</a></li></ul></li><li><a href="/front-end-specification/css.html" aria-current="page" class="active sidebar-link">CSS 编码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#空格" class="sidebar-link">空格</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#行长度" class="sidebar-link">行长度</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#选择器" class="sidebar-link">选择器</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#清除浮动" class="sidebar-link">清除浮动</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#important" class="sidebar-link">!important</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#z-index" class="sidebar-link">z-index</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#文本" class="sidebar-link">文本</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#数值" class="sidebar-link">数值</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#url" class="sidebar-link">url()</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#长度" class="sidebar-link">长度</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#颜色" class="sidebar-link">颜色</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#位置" class="sidebar-link">位置</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#字体族" class="sidebar-link">字体族</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#字重" class="sidebar-link">字重</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#行高" class="sidebar-link">行高</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#变换与动画" class="sidebar-link">变换与动画</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/css.html#响应式" class="sidebar-link">响应式</a></li></ul></li><li><a href="/front-end-specification/html.html" class="sidebar-link">HTML 编码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#缩进与换行" class="sidebar-link">缩进与换行</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#命名" class="sidebar-link">命名</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#标签" class="sidebar-link">标签</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#doctype" class="sidebar-link">DOCTYPE</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#编码" class="sidebar-link">编码</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#css-和-javascript-引入" class="sidebar-link">CSS 和 JavaScript 引入</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#head" class="sidebar-link">head</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#图片" class="sidebar-link">图片</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#表单" class="sidebar-link">表单</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/html.html#多媒体" class="sidebar-link">多媒体</a></li></ul></li><li><a href="/front-end-specification/vue.html" class="sidebar-link">Vue 编码规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#组件命名" class="sidebar-link">组件命名</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#组件使用" class="sidebar-link">组件使用</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#options-api-选项的顺序" class="sidebar-link">options API 选项的顺序</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#v-for" class="sidebar-link">v-for</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#scoped" class="sidebar-link">scoped</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#单文件组件顶级元素标签的顺序" class="sidebar-link">单文件组件顶级元素标签的顺序</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#空行" class="sidebar-link">空行</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/vue.html#jsx" class="sidebar-link">JSX</a></li></ul></li><li><a href="/front-end-specification/git.html" class="sidebar-link">Git 规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/git.html#git-分支管理规范" class="sidebar-link">Git 分支管理规范</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/git.html#git-commit-message-规范" class="sidebar-link">Git Commit Message 规范</a></li></ul></li><li><a href="/front-end-specification/file.html" class="sidebar-link">文件命名规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/file.html#命名" class="sidebar-link">命名</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/file.html#复数与缩写" class="sidebar-link">复数与缩写</a></li></ul></li><li><a href="/front-end-specification/verify.html" class="sidebar-link">规范验证与代码格式化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-specification/verify.html#代码验证及自动格式化" class="sidebar-link">代码验证及自动格式化</a></li><li class="sidebar-sub-header"><a href="/front-end-specification/verify.html#git-commit-message-验证" class="sidebar-link">git commit message 验证</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css-编码规范"><a href="#css-编码规范" class="header-anchor">#</a> CSS 编码规范</h1> <ol><li><a href="#%E7%A9%BA%E6%A0%BC">空格</a></li> <li><a href="#%E8%A1%8C%E9%95%BF%E5%BA%A6">行长度</a></li> <li><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a></li> <li><a href="#%E5%B1%9E%E6%80%A7">属性</a></li> <li><a href="#%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8">清除浮动</a></li> <li><a href="#important">!important</a></li> <li><a href="#%E6%96%87%E6%9C%AC">文本</a></li> <li><a href="#%E6%95%B0%E5%80%BC">数值</a></li> <li><a href="#url">url()</a></li> <li><a href="#%E9%95%BF%E5%BA%A6">长度</a></li> <li><a href="#%E9%A2%9C%E8%89%B2">颜色</a></li> <li><a href="#%E4%BD%8D%E7%BD%AE">位置</a></li> <li><a href="#%E5%AD%97%E4%BD%93%E6%97%8F">字体族</a></li> <li><a href="#%E5%AD%97%E9%87%8D">字重</a></li> <li><a href="#%E8%A1%8C%E9%AB%98">行高</a></li> <li><a href="#%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%8A%A8%E7%94%BB">变换与动画</a></li> <li><a href="#%E5%93%8D%E5%BA%94%E5%BC%8F">响应式</a></li></ol> <h2 id="空格"><a href="#空格" class="header-anchor">#</a> 空格</h2> <h4 id="使用-4-个空格做为一个缩进层级-不允许使用-2-个空格-或-tab-字符。"><a href="#使用-4-个空格做为一个缩进层级-不允许使用-2-个空格-或-tab-字符。" class="header-anchor">#</a> 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.selector</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="选择器-与-之间必须包含空格。"><a href="#选择器-与-之间必须包含空格。" class="header-anchor">#</a> <code>选择器</code> 与 <code>{</code> 之间必须包含空格。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.selector</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="属性名-与之后的-之间不允许包含空格-与-属性值-之间必须包含空格。"><a href="#属性名-与之后的-之间不允许包含空格-与-属性值-之间必须包含空格。" class="header-anchor">#</a> <code>属性名</code> 与之后的 <code>:</code> 之间不允许包含空格， <code>:</code> 与 <code>属性值</code> 之间必须包含空格。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+</code></pre></div><h4 id="列表型属性值-书写在单行时-后必须跟一个空格。"><a href="#列表型属性值-书写在单行时-后必须跟一个空格。" class="header-anchor">#</a> <code>列表型属性值</code> 书写在单行时，<code>,</code> 后必须跟一个空格。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="行长度"><a href="#行长度" class="header-anchor">#</a> 行长度</h2> <h4 id="每行不得超过-120-个字符-除非单行不可分割。"><a href="#每行不得超过-120-个字符-除非单行不可分割。" class="header-anchor">#</a> 每行不得超过 <code>120</code> 个字符，除非单行不可分割。</h4> <p>解释：</p> <p>常见不可分割的场景为URL超长。</p> <h4 id="对于超长的样式-在样式值的-空格-处或-后换行-建议按逻辑分组。"><a href="#对于超长的样式-在样式值的-空格-处或-后换行-建议按逻辑分组。" class="header-anchor">#</a> 对于超长的样式，在样式值的 <code>空格</code> 处或 <code>,</code> 后换行，建议按逻辑分组。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 不同属性值按逻辑分组 */</span>
+<span class="token property">background</span><span class="token punctuation">:</span>
+    transparent <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>aVeryVeryVeryLongUrlIsPlacedHere<span class="token punctuation">)</span></span>
+    no-repeat 0 0<span class="token punctuation">;</span>
+
+<span class="token comment">/* 可重复多次的属性，每次重复一行 */</span>
+<span class="token property">background-image</span><span class="token punctuation">:</span>
+    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>aVeryVeryVeryLongUrlIsPlacedHere<span class="token punctuation">)</span></span>
+    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>anotherVeryVeryVeryLongUrlIsPlacedHere<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 类似函数的属性值可以根据函数调用的缩进进行 */</span>
+<span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">-webkit-gradient</span><span class="token punctuation">(</span>
+    linear<span class="token punctuation">,</span>
+    left bottom<span class="token punctuation">,</span>
+    left top<span class="token punctuation">,</span>
+    <span class="token function">color-stop</span><span class="token punctuation">(</span>0.04<span class="token punctuation">,</span> <span class="token function">rgb</span><span class="token punctuation">(</span>88<span class="token punctuation">,</span>94<span class="token punctuation">,</span>124<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">color-stop</span><span class="token punctuation">(</span>0.52<span class="token punctuation">,</span> <span class="token function">rgb</span><span class="token punctuation">(</span>115<span class="token punctuation">,</span>123<span class="token punctuation">,</span>162<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="选择器"><a href="#选择器" class="header-anchor">#</a> 选择器</h2> <h4 id="当一个-rule-包含多个-selector-时-每个选择器声明必须独占一行。"><a href="#当一个-rule-包含多个-selector-时-每个选择器声明必须独占一行。" class="header-anchor">#</a> 当一个 rule 包含多个 selector 时，每个选择器声明必须独占一行。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.post,
+.page,
+.comment</span> <span class="token punctuation">{</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.post, .page, .comment</span> <span class="token punctuation">{</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="、-、-选择器的两边各保留一个空格。"><a href="#、-、-选择器的两边各保留一个空格。" class="header-anchor">#</a> <code>&gt;</code>、<code>+</code>、<code>~</code> 选择器的两边各保留一个空格。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">main &gt; nav</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">label + input</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">input:checked ~ button</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #69C<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">main&gt;nav</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">label+input</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">input:checked~button</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #69C<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="属性选择器中的值必须用双引号包围。"><a href="#属性选择器中的值必须用双引号包围。" class="header-anchor">#</a> 属性选择器中的值必须用双引号包围。</h4> <p>解释：</p> <p>不允许使用单引号，不允许不使用引号。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">article[character=&quot;juliet&quot;]</span> <span class="token punctuation">{</span>
+    <span class="token property">voice-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Vivien Leigh&quot;</span><span class="token punctuation">,</span> victoria<span class="token punctuation">,</span> female<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">article[character='juliet']</span> <span class="token punctuation">{</span>
+    <span class="token property">voice-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Vivien Leigh&quot;</span><span class="token punctuation">,</span> victoria<span class="token punctuation">,</span> female<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="如无必要-不得为-id、class-选择器添加类型选择器进行限定。"><a href="#如无必要-不得为-id、class-选择器添加类型选择器进行限定。" class="header-anchor">#</a> 如无必要，不得为 <code>id</code>、<code>class</code> 选择器添加类型选择器进行限定。</h4> <p>解释：</p> <p>在性能和维护性上，都有一定的影响。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">#error,
+.danger-message</span> <span class="token punctuation">{</span>
+    <span class="token property">font-color</span><span class="token punctuation">:</span> #c00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">dialog#error,
+p.danger-message</span> <span class="token punctuation">{</span>
+    <span class="token property">font-color</span><span class="token punctuation">:</span> #c00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="选择器的嵌套层级应不大于-4-级-位置靠后的限定条件应尽可能精确。"><a href="#选择器的嵌套层级应不大于-4-级-位置靠后的限定条件应尽可能精确。" class="header-anchor">#</a> 选择器的嵌套层级应不大于 <code>4</code> 级，位置靠后的限定条件应尽可能精确。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">#username input</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">.comment .avatar</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.page .header .login #username input</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token selector">.comment div *</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <h4 id="属性定义必须另起一行。"><a href="#属性定义必须另起一行。" class="header-anchor">#</a> 属性定义必须另起一行。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span> <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><h4 id="属性定义后必须以分号结尾。"><a href="#属性定义后必须以分号结尾。" class="header-anchor">#</a> 属性定义后必须以分号结尾。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.selector</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="在可以使用缩写的情况下-尽量使用属性缩写。"><a href="#在可以使用缩写的情况下-尽量使用属性缩写。" class="header-anchor">#</a> 在可以使用缩写的情况下，尽量使用属性缩写。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.post</span> <span class="token punctuation">{</span>
+    <span class="token property">font</span><span class="token punctuation">:</span> 12px/1.5 arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.post</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用-border-margin-padding-等缩写时-应注意隐含值对实际数值的影响-确实需要设置多个方向的值时才使用缩写。"><a href="#使用-border-margin-padding-等缩写时-应注意隐含值对实际数值的影响-确实需要设置多个方向的值时才使用缩写。" class="header-anchor">#</a> 使用 <code>border</code> / <code>margin</code> / <code>padding</code> 等缩写时，应注意隐含值对实际数值的影响，确实需要设置多个方向的值时才使用缩写。</h4> <p>解释：</p> <p><code>border</code> / <code>margin</code> / <code>padding</code> 等缩写会同时设置多个属性的值，容易覆盖不需要覆盖的设定。如某些方向需要继承其他声明的值，则应该分开设置。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* centering &lt;article class=&quot;page&quot;&gt; horizontally and highlight featured ones */</span>
+<span class="token selector">article</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #999<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* good */</span>
+<span class="token selector">.page</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.featured</span> <span class="token punctuation">{</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> #69c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.page</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px auto<span class="token punctuation">;</span> <span class="token comment">/* introducing redundancy */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.featured</span> <span class="token punctuation">{</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #69c<span class="token punctuation">;</span> <span class="token comment">/* introducing redundancy */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="同一-rule-set-下的属性在书写时-应按功能进行分组-并以-formatting-model-布局方式、位置-box-model-尺寸-typographic-文本相关-visual-视觉效果-的顺序书写-以提高代码的可读性。"><a href="#同一-rule-set-下的属性在书写时-应按功能进行分组-并以-formatting-model-布局方式、位置-box-model-尺寸-typographic-文本相关-visual-视觉效果-的顺序书写-以提高代码的可读性。" class="header-anchor">#</a> 同一 rule set 下的属性在书写时，应按功能进行分组，并以 <strong>Formatting Model（布局方式、位置） &gt; Box Model（尺寸） &gt; Typographic（文本相关） &gt; Visual（视觉效果）</strong> 的顺序书写，以提高代码的可读性。</h4> <p>解释：</p> <ul><li>Formatting Model 相关属性包括：<code>position</code> / <code>top</code> / <code>right</code> / <code>bottom</code> / <code>left</code> / <code>float</code> / <code>display</code> / <code>overflow</code> 等</li> <li>Box Model 相关属性包括：<code>border</code> / <code>margin</code> / <code>padding</code> / <code>width</code> / <code>height</code> 等</li> <li>Typographic 相关属性包括：<code>font</code> / <code>line-height</code> / <code>text-align</code> / <code>word-wrap</code> 等</li> <li>Visual 相关属性包括：<code>background</code> / <code>color</code> / <code>transition</code> / <code>list-style</code> 等</li></ul> <p>另外，如果包含 <code>content</code> 属性，应放在最前面。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.sidebar</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* formatting model: positioning schemes / offsets / z-indexes / display / ...  */</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">overflow-x</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+
+    <span class="token comment">/* box model: sizes / margins / paddings / borders / ...  */</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #ddd<span class="token punctuation">;</span>
+
+    <span class="token comment">/* typographic: font / aligns / text styles / ... */</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+
+    <span class="token comment">/* visual: colors / shadows / gradients / ... */</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #f5f5f5<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">;</span>
+       <span class="token property">-moz-transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">;</span>
+            <span class="token property">transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="清除浮动"><a href="#清除浮动" class="header-anchor">#</a> 清除浮动</h2> <h4 id="当元素需要撑起高度以包含内部的浮动元素时-通过对伪类设置-clear-或触发-bfc-的方式进行-clearfix。尽量不使用增加空标签的方式。"><a href="#当元素需要撑起高度以包含内部的浮动元素时-通过对伪类设置-clear-或触发-bfc-的方式进行-clearfix。尽量不使用增加空标签的方式。" class="header-anchor">#</a> 当元素需要撑起高度以包含内部的浮动元素时，通过对伪类设置 <code>clear</code> 或触发 <code>BFC</code> 的方式进行 <code>clearfix</code>。尽量不使用增加空标签的方式。</h4> <p>解释：</p> <p>触发 BFC 的方式很多，常见的有：</p> <ul><li>float 非 none</li> <li>position 非 static</li> <li>overflow 非 visible</li></ul> <p>如希望使用更小副作用的清除浮动方法，参见 <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank" rel="noopener noreferrer">A new micro clearfix hack<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 一文。</p> <p>另需注意，对已经触发 BFC 的元素不需要再进行 clearfix。</p> <p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="important"><a href="#important" class="header-anchor">#</a> !important</h2> <h4 id="尽量不使用-important-声明。"><a href="#尽量不使用-important-声明。" class="header-anchor">#</a> 尽量不使用 <code>!important</code> 声明。</h4> <h4 id="当需要强制指定样式且不允许任何场景覆盖时-通过标签内联和-important-定义样式。"><a href="#当需要强制指定样式且不允许任何场景覆盖时-通过标签内联和-important-定义样式。" class="header-anchor">#</a> 当需要强制指定样式且不允许任何场景覆盖时，通过标签内联和 <code>!important</code> 定义样式。</h4> <p>解释：</p> <p>必须注意的是，仅在设计上 <code>确实不允许任何其它场景覆盖样式</code> 时，才使用内联的 <code>!important</code> 样式。通常在第三方环境的应用中使用这种方案。下面的 <code>z-index</code> 章节是其中一个特殊场景的典型样例。</p> <p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="z-index"><a href="#z-index" class="header-anchor">#</a> z-index</h2> <h4 id="将-z-index-进行分层-对文档流外绝对定位元素的视觉层级关系进行管理。"><a href="#将-z-index-进行分层-对文档流外绝对定位元素的视觉层级关系进行管理。" class="header-anchor">#</a> 将 <code>z-index</code> 进行分层，对文档流外绝对定位元素的视觉层级关系进行管理。</h4> <p>解释：</p> <p>同层的多个元素，如多个由用户输入触发的 Dialog，在该层级内使用相同的 <code>z-index</code> 或递增 <code>z-index</code>。</p> <p>建议每层包含100个 <code>z-index</code> 来容纳足够的元素，如果每层元素较多，可以调整这个数值。</p> <h4 id="在可控环境下-期望显示在最上层的元素-z-index-指定为-999999。"><a href="#在可控环境下-期望显示在最上层的元素-z-index-指定为-999999。" class="header-anchor">#</a> 在可控环境下，期望显示在最上层的元素，<code>z-index</code> 指定为 <code>999999</code>。</h4> <p>解释：</p> <p>可控环境分成两种，一种是自身产品线环境；还有一种是可能会被其他产品线引用，但是不会被外部第三方的产品引用。</p> <p>不建议取值为 <code>2147483647</code>。以便于自身产品线被其他产品线引用时，当遇到层级覆盖冲突的情况，留出向上调整的空间。</p> <h4 id="在第三方环境下-期望显示在最上层的元素-通过标签内联和-important-将-z-index-指定为-2147483647。"><a href="#在第三方环境下-期望显示在最上层的元素-通过标签内联和-important-将-z-index-指定为-2147483647。" class="header-anchor">#</a> 在第三方环境下，期望显示在最上层的元素，通过标签内联和 <code>!important</code>，将 <code>z-index</code> 指定为 <code>2147483647</code>。</h4> <p>解释：</p> <p>第三方环境对于开发者来说完全不可控。在第三方环境下的元素，为了保证元素不被其页面其他样式定义覆盖，需要采用此做法。</p> <p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="文本"><a href="#文本" class="header-anchor">#</a> 文本</h2> <h4 id="文本内容必须用双引号包围。"><a href="#文本内容必须用双引号包围。" class="header-anchor">#</a> 文本内容必须用双引号包围。</h4> <p>解释：</p> <p>文本类型的内容可能在选择器、属性值等内容中。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">html[lang|=&quot;zh&quot;] q:before</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;“&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">html[lang|=&quot;zh&quot;] q:after</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;”&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">html[lang|=zh] q:before</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Microsoft YaHei'</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'“'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">html[lang|=zh] q:after</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;”&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="数值"><a href="#数值" class="header-anchor">#</a> 数值</h2> <h4 id="当数值为-0-1-之间的小数时-省略整数部分的-0。"><a href="#当数值为-0-1-之间的小数时-省略整数部分的-0。" class="header-anchor">#</a> 当数值为 0 - 1 之间的小数时，省略整数部分的 <code>0</code>。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">panel</span> <span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> .8<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">panel</span> <span class="token punctuation">{</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.8<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="url"><a href="#url" class="header-anchor">#</a> url()</h2> <h4 id="url-函数中的路径不加引号。"><a href="#url-函数中的路径不加引号。" class="header-anchor">#</a> <code>url()</code> 函数中的路径不加引号。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>bg.png<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="url-函数中的绝对路径可省去协议名。"><a href="#url-函数中的绝对路径可省去协议名。" class="header-anchor">#</a> <code>url()</code> 函数中的绝对路径可省去协议名。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>//baidu.com/img/bg.png<span class="token punctuation">)</span></span> no-repeat 0 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="长度"><a href="#长度" class="header-anchor">#</a> 长度</h2> <h4 id="长度为-0-时须省略单位。-也只有长度单位可省"><a href="#长度为-0-时须省略单位。-也只有长度单位可省" class="header-anchor">#</a> 长度为 <code>0</code> 时须省略单位。 (也只有长度单位可省)</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="颜色"><a href="#颜色" class="header-anchor">#</a> 颜色</h2> <h4 id="rgb颜色值必须使用十六进制记号形式-rrggbb。不允许使用-rgb-。"><a href="#rgb颜色值必须使用十六进制记号形式-rrggbb。不允许使用-rgb-。" class="header-anchor">#</a> RGB颜色值必须使用十六进制记号形式 <code>#rrggbb</code>。不允许使用 <code>rgb()</code>。</h4> <p>解释：</p> <p>带有alpha的颜色信息可以使用 <code>rgba()</code>。使用 <code>rgba()</code> 时每个逗号后必须保留一个空格。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 128<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> .3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> #008000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>128<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 128<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="颜色值可以缩写时-必须使用缩写形式。"><a href="#颜色值可以缩写时-必须使用缩写形式。" class="header-anchor">#</a> 颜色值可以缩写时，必须使用缩写形式。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #aca<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #aaccaa<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="颜色值不允许使用命名色值。"><a href="#颜色值不允许使用命名色值。" class="header-anchor">#</a> 颜色值不允许使用命名色值。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #90ee90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> lightgreen<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="颜色值中的英文字符采用小写。如不用小写也需要保证同一项目内保持大小写一致。"><a href="#颜色值中的英文字符采用小写。如不用小写也需要保证同一项目内保持大小写一致。" class="header-anchor">#</a> 颜色值中的英文字符采用小写。如不用小写也需要保证同一项目内保持大小写一致。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #aca<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #90ee90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* good */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ACA<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #90EE90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.success</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #ACA<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #90ee90<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="位置"><a href="#位置" class="header-anchor">#</a> 位置</h2> <h4 id="_2d-位置必须同时给出水平和垂直方向的位置。"><a href="#_2d-位置必须同时给出水平和垂直方向的位置。" class="header-anchor">#</a> 2D 位置必须同时给出水平和垂直方向的位置。</h4> <p>解释：</p> <p>2D 位置初始值为 <code>0% 0%</code>，但在只有一个方向的值时，另一个方向的值会被解析为 center。为避免理解上的困扰，应同时给出两个方向的值。<a href="http://www.w3.org/TR/CSS21/colors.html#propdef-background-position" target="_blank" rel="noopener noreferrer">background-position属性值的定义<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">background-position</span><span class="token punctuation">:</span> center top<span class="token punctuation">;</span> <span class="token comment">/* 50% 0% */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">background-position</span><span class="token punctuation">:</span> top<span class="token punctuation">;</span> <span class="token comment">/* 50% 0% */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="字体族"><a href="#字体族" class="header-anchor">#</a> 字体族</h2> <h4 id="font-family-属性中的字体族名称应使用字体的英文-family-name-其中如有空格-须放置在引号中。"><a href="#font-family-属性中的字体族名称应使用字体的英文-family-name-其中如有空格-须放置在引号中。" class="header-anchor">#</a> <code>font-family</code> 属性中的字体族名称应使用字体的英文 <code>Family Name</code>，其中如有空格，须放置在引号中。</h4> <p>解释：</p> <p>所谓英文 Family Name，为字体文件的一个元数据，常见名称如下：</p> <table><thead><tr><th>字体</th> <th>操作系统</th> <th>Family Name</th></tr></thead> <tbody><tr><td>宋体 (中易宋体)</td> <td>Windows</td> <td>SimSun</td></tr> <tr><td>黑体 (中易黑体)</td> <td>Windows</td> <td>SimHei</td></tr> <tr><td>微软雅黑</td> <td>Windows</td> <td>Microsoft YaHei</td></tr> <tr><td>微软正黑</td> <td>Windows</td> <td>Microsoft JhengHei</td></tr> <tr><td>华文黑体</td> <td>Mac/iOS</td> <td>STHeiti</td></tr> <tr><td>冬青黑体</td> <td>Mac/iOS</td> <td>Hiragino Sans GB</td></tr> <tr><td>文泉驿正黑</td> <td>Linux</td> <td>WenQuanYi Zen Hei</td></tr> <tr><td>文泉驿微米黑</td> <td>Linux</td> <td>WenQuanYi Micro Hei</td></tr></tbody></table> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="font-family-按「西文字体在前、中文字体在后」、「效果佳-质量高-更能满足需求-的字体在前、效果一般的字体在后」的顺序编写-最后必须指定一个通用字体族-serif-sans-serif-。"><a href="#font-family-按「西文字体在前、中文字体在后」、「效果佳-质量高-更能满足需求-的字体在前、效果一般的字体在后」的顺序编写-最后必须指定一个通用字体族-serif-sans-serif-。" class="header-anchor">#</a> <code>font-family</code> 按「西文字体在前、中文字体在后」、「效果佳 (质量高/更能满足需求) 的字体在前、效果一般的字体在后」的顺序编写，最后必须指定一个通用字体族( <code>serif</code> / <code>sans-serif</code> )。</h4> <p>解释：</p> <p>更详细说明可参考<a href="http://www.zhihu.com/question/19911793/answer/13329819" target="_blank" rel="noopener noreferrer">本文<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* Display according to platform */</span>
+<span class="token selector">.article</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* Specific for most platforms */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Helvetica Neue&quot;</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> <span class="token string">&quot;Hiragino Sans GB&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;WenQuanYi Micro Hei&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="font-family-不区分大小写-但在同一个项目中-同样的-family-name-大小写必须统一。"><a href="#font-family-不区分大小写-但在同一个项目中-同样的-family-name-大小写必须统一。" class="header-anchor">#</a> <code>font-family</code> 不区分大小写，但在同一个项目中，同样的 <code>Family Name</code> 大小写必须统一。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> arial<span class="token punctuation">,</span> <span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="字重"><a href="#字重" class="header-anchor">#</a> 字重</h2> <h4 id="font-weight-属性必须使用数值方式描述。"><a href="#font-weight-属性必须使用数值方式描述。" class="header-anchor">#</a> <code>font-weight</code> 属性必须使用数值方式描述。</h4> <p>解释：</p> <p>CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览器的限制，实际上支持 <code>400</code> 和 <code>700</code> 两档，分别等价于关键词 <code>normal</code> 和 <code>bold</code>。</p> <p>浏览器本身使用一系列<a href="http://www.w3.org/TR/CSS21/fonts.html#propdef-font-weight" target="_blank" rel="noopener noreferrer">启发式规则<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来进行匹配，在 <code>&lt;700</code> 时一般匹配字体的 Regular 字重，<code>&gt;=700</code> 时匹配 Bold 字重。</p> <p>但已有浏览器开始支持 <code>=600</code> 时匹配 Semibold 字重 (见<a href="http://justineo.github.io/slideshows/font/#/3/15" target="_blank" rel="noopener noreferrer">此表<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)，故使用数值描述增加了灵活性，也更简短。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="行高"><a href="#行高" class="header-anchor">#</a> 行高</h2> <h4 id="line-height-在定义文本段落时-应使用数值。"><a href="#line-height-在定义文本段落时-应使用数值。" class="header-anchor">#</a> <code>line-height</code> 在定义文本段落时，应使用数值。</h4> <p>解释：</p> <p>将 <code>line-height</code> 设置为数值，浏览器会基于当前元素设置的 <code>font-size</code> 进行再次计算。在不同字号的文本段落组合中，能达到较为舒适的行间间隔效果，避免在每个设置了 <code>font-size</code> 都需要设置 <code>line-height</code>。</p> <p>当 <code>line-height</code> 用于控制垂直居中时，还是应该设置成与容器高度一致。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.container</span> <span class="token punctuation">{</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="变换与动画"><a href="#变换与动画" class="header-anchor">#</a> 变换与动画</h2> <h4 id="使用-transition-时应指定-transition-property。"><a href="#使用-transition-时应指定-transition-property。" class="header-anchor">#</a> 使用 <code>transition</code> 时应指定 <code>transition-property</code>。</h4> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> color 1s<span class="token punctuation">,</span> border-color 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> all 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="尽可能在浏览器能高效实现的属性上添加过渡和动画。"><a href="#尽可能在浏览器能高效实现的属性上添加过渡和动画。" class="header-anchor">#</a> 尽可能在浏览器能高效实现的属性上添加过渡和动画。</h4> <p>解释：</p> <p>见<a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/" target="_blank" rel="noopener noreferrer">本文<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，在可能的情况下应选择这样四种变换：</p> <ul><li><code>transform: translate(npx, npx);</code></li> <li><code>transform: scale(n);</code></li> <li><code>transform: rotate(ndeg);</code></li> <li><code>opacity: 0..1;</code></li></ul> <p>典型的，可以使用 <code>translate</code> 来代替 <code>left</code> 作为动画属性。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* good */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> transform 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>20px<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* move right for 20px */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* bad */</span>
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> left 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box:hover</span> <span class="token punctuation">{</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">/* move right for 20px */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p> <h2 id="响应式"><a href="#响应式" class="header-anchor">#</a> 响应式</h2> <h4 id="media-query-如果有多个逗号分隔的条件时-应将每个条件放在单独一行中。"><a href="#media-query-如果有多个逗号分隔的条件时-应将每个条件放在单独一行中。" class="header-anchor">#</a> <code>Media Query</code> 如果有多个逗号分隔的条件时，应将每个条件放在单独一行中。</h4> <div class="language-css extra-class"><pre class="language-css"><code>@media
+<span class="token punctuation">(</span><span class="token property">-webkit-min-device-pixel-ratio</span><span class="token punctuation">:</span> 2<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Webkit-based browsers */</span>
+<span class="token punctuation">(</span><span class="token property">min--moz-device-pixel-ratio</span><span class="token punctuation">:</span> 2<span class="token punctuation">)</span><span class="token punctuation">,</span>    <span class="token comment">/* Older Firefox browsers (prior to Firefox 16) */</span>
+<span class="token punctuation">(</span><span class="token property">min-resolution</span><span class="token punctuation">:</span> 2dppx<span class="token punctuation">)</span><span class="token punctuation">,</span>             <span class="token comment">/* The standard way */</span>
+<span class="token selector">(min-resolution: 192dpi)</span> <span class="token punctuation">{</span>           <span class="token comment">/* dppx fallback */</span>
+    <span class="token comment">/* Retina-specific stuff here */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="尽可能给出在高分辨率设备-retina-下效果更佳的样式。"><a href="#尽可能给出在高分辨率设备-retina-下效果更佳的样式。" class="header-anchor">#</a> 尽可能给出在高分辨率设备 (Retina) 下效果更佳的样式。</h4> <p><strong><a href="#css-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">回到顶部</a></strong></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/front-end-specification/js.html" class="prev">
+        JavaScript 编码规范
+      </a></span> <span class="next"><a href="/front-end-specification/html.html">
+        HTML 编码规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/front-end-specification/assets/js/app.dfc6ef1a.js" defer></script><script src="/front-end-specification/assets/js/2.3ba16526.js" defer></script><script src="/front-end-specification/assets/js/8.43deaf91.js" defer></script>
+  </body>
+</html>
