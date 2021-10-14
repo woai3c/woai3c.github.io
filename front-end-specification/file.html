@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="referrer" content="no-referrer">
     
-    <link rel="preload" href="/front-end-specification/assets/css/0.styles.8065cc31.css" as="style"><link rel="preload" href="/front-end-specification/assets/js/app.56042f18.js" as="script"><link rel="preload" href="/front-end-specification/assets/js/2.3ba16526.js" as="script"><link rel="preload" href="/front-end-specification/assets/js/9.02f8a918.js" as="script"><link rel="prefetch" href="/front-end-specification/assets/js/10.ca42446a.js"><link rel="prefetch" href="/front-end-specification/assets/js/11.465efff8.js"><link rel="prefetch" href="/front-end-specification/assets/js/12.1f745f7a.js"><link rel="prefetch" href="/front-end-specification/assets/js/13.227244cc.js"><link rel="prefetch" href="/front-end-specification/assets/js/14.11bc9bec.js"><link rel="prefetch" href="/front-end-specification/assets/js/15.134b64a5.js"><link rel="prefetch" href="/front-end-specification/assets/js/3.5f12890e.js"><link rel="prefetch" href="/front-end-specification/assets/js/4.c1ae2fe6.js"><link rel="prefetch" href="/front-end-specification/assets/js/5.a5a9a5a3.js"><link rel="prefetch" href="/front-end-specification/assets/js/6.c8b7a84a.js"><link rel="prefetch" href="/front-end-specification/assets/js/7.d23dee0b.js"><link rel="prefetch" href="/front-end-specification/assets/js/8.43deaf91.js">
+    <link rel="preload" href="/front-end-specification/assets/css/0.styles.8065cc31.css" as="style"><link rel="preload" href="/front-end-specification/assets/js/app.9404c28d.js" as="script"><link rel="preload" href="/front-end-specification/assets/js/2.3ba16526.js" as="script"><link rel="preload" href="/front-end-specification/assets/js/9.cd2a9078.js" as="script"><link rel="prefetch" href="/front-end-specification/assets/js/10.ca42446a.js"><link rel="prefetch" href="/front-end-specification/assets/js/11.465efff8.js"><link rel="prefetch" href="/front-end-specification/assets/js/12.1f745f7a.js"><link rel="prefetch" href="/front-end-specification/assets/js/13.227244cc.js"><link rel="prefetch" href="/front-end-specification/assets/js/14.11bc9bec.js"><link rel="prefetch" href="/front-end-specification/assets/js/15.134b64a5.js"><link rel="prefetch" href="/front-end-specification/assets/js/3.5f12890e.js"><link rel="prefetch" href="/front-end-specification/assets/js/4.c1ae2fe6.js"><link rel="prefetch" href="/front-end-specification/assets/js/5.a5a9a5a3.js"><link rel="prefetch" href="/front-end-specification/assets/js/6.c8b7a84a.js"><link rel="prefetch" href="/front-end-specification/assets/js/7.d23dee0b.js"><link rel="prefetch" href="/front-end-specification/assets/js/8.43deaf91.js">
     <link rel="stylesheet" href="/front-end-specification/assets/css/0.styles.8065cc31.css">
   </head>
   <body>
@@ -59,12 +59,16 @@
             - index.vue
             - Button.vue <span class="token comment"># 只用于该页面的组件放在该页面目录下</span>
         - list.vue
-</code></pre></div><h2 id="命名"><a href="#命名" class="header-anchor">#</a> 命名</h2> <p>文件命名使用全小写字母（特殊文件除外，例如 Vue 的组件命名），如果有多个单词则以 &quot;-&quot; 进行连接，示例：</p> <div class="language- extra-class"><pre class="language-text"><code>package-lock.json
-</code></pre></div><h3 id="类文件"><a href="#类文件" class="header-anchor">#</a> 类文件</h3> <p>假设你的文件里就只有一个类，那么文件名要与类名一致。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 文件名为 Apple.js</span>
+</code></pre></div><h2 id="命名"><a href="#命名" class="header-anchor">#</a> 命名</h2> <p>文件命名使用小驼峰式命名，类文件、组件文件等使用大驼峰式全名。文件名要跟文件里导出的唯一对象（或默认导出对象）相同。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 文件名为 add.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 文件名为 Apple.js</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Apple</span> <span class="token punctuation">{</span>
     <span class="token comment">// ...</span>
 <span class="token punctuation">}</span>
-</code></pre></div><h2 id="复数与缩写"><a href="#复数与缩写" class="header-anchor">#</a> 复数与缩写</h2> <p>当你的目录有多个子文件时，需要用复数形式，示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>- tests <span class="token comment"># 测试文件目录，有多个测试文件</span>
+</code></pre></div><p>一些特殊的文件可保持不变，例如默认生成的 <code>package-lock</code> 文件。</p> <div class="language- extra-class"><pre class="language-text"><code>package-lock.json
+</code></pre></div><p>类名一致。</p> <h2 id="复数与缩写"><a href="#复数与缩写" class="header-anchor">#</a> 复数与缩写</h2> <p>当你的目录有多个子文件时，需要用复数形式，示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>- tests <span class="token comment"># 测试文件目录，有多个测试文件</span>
     - a.spec.js
     - b.spec.js
 </code></pre></div><p>但如果你的目录命名为缩写，则不要使用复数形式，示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>- src
@@ -82,6 +86,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/front-end-specification/assets/js/app.56042f18.js" defer></script><script src="/front-end-specification/assets/js/2.3ba16526.js" defer></script><script src="/front-end-specification/assets/js/9.02f8a918.js" defer></script>
+    <script src="/front-end-specification/assets/js/app.9404c28d.js" defer></script><script src="/front-end-specification/assets/js/2.3ba16526.js" defer></script><script src="/front-end-specification/assets/js/9.cd2a9078.js" defer></script>
   </body>
 </html>
