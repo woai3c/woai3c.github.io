@@ -1,1 +1,67 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/visual-drag-demo/favicon.ico"><title>visual-drag-demo</title><link href="/visual-drag-demo/css/chunk-2142818a.74ef4024.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-3ef62fca.d4cdb83a.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-a5fbc3e0.fff46e70.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-ac64c48a.99640cda.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-cac1b34a.42c8fb88.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-cfacd118.ed76efeb.css" rel="prefetch"><link href="/visual-drag-demo/js/chunk-2142818a.aed785b2.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-3ef62fca.16c825b7.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-a5fbc3e0.a0447e14.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-ac64c48a.619b745f.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-cac1b34a.8e459b18.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-cfacd118.2e7d04e5.js" rel="prefetch"><link href="/visual-drag-demo/css/app.46312347.css" rel="preload" as="style"><link href="/visual-drag-demo/css/chunk-vendors.37b3d8f8.css" rel="preload" as="style"><link href="/visual-drag-demo/js/app.f7d1b0fb.js" rel="preload" as="script"><link href="/visual-drag-demo/js/chunk-vendors.dcb8472e.js" rel="preload" as="script"><link href="/visual-drag-demo/css/chunk-vendors.37b3d8f8.css" rel="stylesheet"><link href="/visual-drag-demo/css/app.46312347.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but visual-drag-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app">正在努力加载页面，请耐心等候...</div><script src="/visual-drag-demo/js/chunk-vendors.dcb8472e.js"></script><script src="/visual-drag-demo/js/app.f7d1b0fb.js"></script></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/visual-drag-demo/favicon.ico"><title>visual-drag-demo</title><style>.visual-loading-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 999999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #333;
+            font-size: 12px;
+        }
+
+        .visual-circle-path {
+            stroke: #0f62fe;
+            /* 给画笔设置一个颜色 */
+            stroke-width: 2;
+            /* 设置线条的宽度 */
+            stroke-dasharray: 95, 126;
+            /* 设置实现长95，虚线长126 */
+            stroke-dashoffset: 0;
+            /* 设置虚线的偏移位置 */
+            animation: visual-loading-dash 1.5s ease-in-out infinite;
+        }
+
+        @keyframes visual-loading-dash {
+            0% {
+                stroke-dasharray: 1, 126;
+                /* 实线部分1，虚线部分126 */
+                stroke-dashoffset: 0;
+                /* 前面1/126显示实线，后面125显示空白 */
+            }
+
+            50% {
+                stroke-dasharray: 95, 126;
+                /* 实线部分95，虚线部分126 */
+                stroke-dashoffset: -31px
+                    /* 顺时针偏移31/126，即前31/126显示空白，后面3/4显示线条 */
+            }
+
+            to {
+                stroke-dasharray: 6, 120;
+                /* 实线部分6，虚线部分120 */
+                stroke-dashoffset: -120px;
+                /* 最后顺时针偏移120/126，即前120/126显示空白，后面6点显示线条部分 */
+            }
+        }
+
+        .visual-loading-svg {
+            width: 2.5em;
+            height: 2.5em;
+            max-width: 50px;
+            /* 设置svg显示区域大小 */
+            max-height: 50px;
+            animation: visual-loading-rotate 1.5s infinite ease-in-out;
+            /* 给svg也加上一个旋转动画 */
+        }
+
+        @keyframes visual-loading-rotate {
+            to {
+                transform: rotate(1turn);
+                /* 旋转1圈 */
+            }
+        }</style><link href="/visual-drag-demo/css/chunk-2142818a.74ef4024.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-3ef62fca.d4cdb83a.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-a5fbc3e0.fff46e70.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-af6750f4.5b043a69.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-cac1b34a.42c8fb88.css" rel="prefetch"><link href="/visual-drag-demo/css/chunk-cfacd118.ed76efeb.css" rel="prefetch"><link href="/visual-drag-demo/js/chunk-2142818a.0996744e.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-3ef62fca.192c14ba.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-a5fbc3e0.c389ad08.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-af6750f4.3e884a81.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-cac1b34a.0e996af0.js" rel="prefetch"><link href="/visual-drag-demo/js/chunk-cfacd118.a42fd8d1.js" rel="prefetch"><link href="/visual-drag-demo/css/app.46312347.css" rel="preload" as="style"><link href="/visual-drag-demo/css/chunk-vendors.a16c4353.css" rel="preload" as="style"><link href="/visual-drag-demo/js/app.fa279e06.js" rel="preload" as="script"><link href="/visual-drag-demo/js/chunk-vendors.f3489b6d.js" rel="preload" as="script"><link href="/visual-drag-demo/css/chunk-vendors.a16c4353.css" rel="stylesheet"><link href="/visual-drag-demo/css/app.46312347.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but visual-drag-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div class="visual-loading-container"><svg viewBox="0 0 50 50" class="visual-loading-svg"><circle cx="25" cy="25" r="20" fill="none" class="visual-circle-path"></circle></svg><p>正在努力加载页面，请耐心等候...</p></div></div><script src="/visual-drag-demo/js/chunk-vendors.f3489b6d.js"></script><script src="/visual-drag-demo/js/app.fa279e06.js"></script></body></html>
