@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as a,a4 as n}from"./chunks/framework.BGd1GqLd.js";const y=JSON.parse('{"title":"其他","description":"","frontmatter":{"title":"其他"},"headers":[],"relativePath":"qa/other.md","filePath":"qa/other.md"}'),t={name:"qa/other.md"},i=n("",47),s=[i];function r(d,c,h,l,u,m){return a(),o("div",null,s)}const f=e(t,[["render",r]]);export{y as __pageData,f as default};
