@@ -1,0 +1,1 @@
+import{_ as l,c as a,o as i,a4 as e}from"./chunks/framework.CpVK_f0P.js";const m=JSON.parse('{"title":"简介","description":"","frontmatter":{"title":"简介"},"headers":[],"relativePath":"introduce.md","filePath":"introduce.md"}'),r={name:"introduce.md"},t=e("",33),o=[t];function n(h,s,u,d,c,p){return i(),a("div",null,o)}const _=l(r,[["render",n]]);export{m as __pageData,_ as default};
